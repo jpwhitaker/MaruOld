@@ -14,6 +14,9 @@
 		B0C88F9A2C2D12A500835268 /* MaruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88F992C2D12A500835268 /* MaruTests.swift */; };
 		B0C88FA42C2D12A500835268 /* MaruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FA32C2D12A500835268 /* MaruUITests.swift */; };
 		B0C88FA62C2D12A500835268 /* MaruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FA52C2D12A500835268 /* MaruUITestsLaunchTests.swift */; };
+		B0C88FB42C2D136D00835268 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB32C2D136D00835268 /* CircleView.swift */; };
+		B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB52C2D15B100835268 /* CircleContainer.swift */; };
+		B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B0C88F9F2C2D12A500835268 /* MaruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C88FA32C2D12A500835268 /* MaruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaruUITests.swift; sourceTree = "<group>"; };
 		B0C88FA52C2D12A500835268 /* MaruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0C88FB32C2D136D00835268 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B0C88FB52C2D15B100835268 /* CircleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleContainer.swift; sourceTree = "<group>"; };
+		B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCircleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		B0C88F872C2D12A300835268 /* Maru */ = {
 			isa = PBXGroup;
 			children = (
+				B0C88FB72C2D219E00835268 /* Models */,
+				B0C88FB22C2D135300835268 /* Views */,
 				B0C88F882C2D12A300835268 /* MaruApp.swift */,
 				B0C88F8A2C2D12A300835268 /* ContentView.swift */,
 				B0C88F8C2C2D12A400835268 /* Assets.xcassets */,
@@ -125,6 +133,23 @@
 				B0C88FA52C2D12A500835268 /* MaruUITestsLaunchTests.swift */,
 			);
 			path = MaruUITests;
+			sourceTree = "<group>";
+		};
+		B0C88FB22C2D135300835268 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0C88FB32C2D136D00835268 /* CircleView.swift */,
+				B0C88FB52C2D15B100835268 /* CircleContainer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0C88FB72C2D219E00835268 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */,
+				B0C88FB42C2D136D00835268 /* CircleView.swift in Sources */,
+				B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */,
 				B0C88F8B2C2D12A300835268 /* ContentView.swift in Sources */,
 				B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */,
 			);
