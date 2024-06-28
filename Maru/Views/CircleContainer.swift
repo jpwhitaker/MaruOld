@@ -18,9 +18,12 @@ struct CircleContainer: View {
           .onAppear{
             let center = CGPoint(x: geometry.size.width / 2, y: geometry.size.width / 2)
             viewModel.center = center
+            viewModel.radius = geometry.size.width/2
           }
+        
         AngleView()
         CircleView()
+        DotView()
       }
     }
     .aspectRatio(1, contentMode: .fit)

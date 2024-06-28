@@ -10,8 +10,9 @@ import SwiftUI
 struct AngleView: View {
     @EnvironmentObject var viewModel: UnitCircleViewModel
     @State private var animateLines = false
+    @State private var lineOpacity = 0.2
     @State var angles: [(start: Double, end: Double)] = [
-        (0, 180), (30, 210), (60, 240), (90, 270), (120, 300), (150, 330)
+        (0, 180), (30, 210), (45, 225), (60, 240), (90, 270), (120, 300), (135,315), (150, 330)
     ]
     
     var body: some View {
@@ -26,11 +27,17 @@ struct AngleView: View {
                             .delay(2 * self.angles[index].start / 360),
                         value: animateLines
                     )
+                    .animation(
+                        .linear(duration: 2 * (self.angles[index].end - self.angles[index].start) / 360)
+                            .delay(2 * self.angles[index].start / 360),
+                        value: lineOpacity
+                    )
             }
         }
         .onAppear {
             withAnimation {
                 self.animateLines = true
+                self.lineOpacity = 1.0
             }
         }
     }
