@@ -12,15 +12,24 @@ import Combine
 class UnitCircleViewModel: ObservableObject {
   @Published var center: CGPoint = .zero
   @Published var angle: Double = 0
-  @Published var containerSize: CGSize = .zero{
-    didSet {
-      updateCenter()
-    }
-  }
+  @Published var radius: Double = 0
+//  @Published var containerSize: CGSize = .zero{
+//    didSet {
+//      updateCenter()
+//      updateRadius()
+//    }
+//  }
+  @Published var angles: [Double] = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330]
   
-  private func updateCenter() {
-      center = CGPoint(x: containerSize.width / 2, y: containerSize.height / 2)
-  }
+//  private func updateCenter() {
+//      center = CGPoint(x: containerSize.width / 2, y: containerSize.height / 2)
+//  }
+//  
+//  private func updateRadius() {
+//      radius = containerSize.width / 2
+//    print("Radius:")
+//    print(radius)
+//  }
 }
 
 

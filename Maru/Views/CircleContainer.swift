@@ -11,10 +11,20 @@ struct CircleContainer: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
   
   var body: some View {
+    
     ZStack {
-      CircleView()
+      GeometryReader { geometry in
+        Color.clear
+          .onAppear{
+            let center = CGPoint(x: geometry.size.width / 2, y: geometry.size.width / 2)
+            viewModel.center = center
+          }
+        AngleView()
+        CircleView()
+      }
     }
-    .border(Color.red, width: 2)
+    .aspectRatio(1, contentMode: .fit)
+//    .border(Color.red, width: 2)
   }
 }
 

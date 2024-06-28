@@ -17,6 +17,7 @@
 		B0C88FB42C2D136D00835268 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB32C2D136D00835268 /* CircleView.swift */; };
 		B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB52C2D15B100835268 /* CircleContainer.swift */; };
 		B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */; };
+		B0C88FBB2C2E005900835268 /* AngleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FBA2C2E005900835268 /* AngleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B0C88FB32C2D136D00835268 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		B0C88FB52C2D15B100835268 /* CircleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleContainer.swift; sourceTree = "<group>"; };
 		B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCircleViewModel.swift; sourceTree = "<group>"; };
+		B0C88FBA2C2E005900835268 /* AngleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				B0C88FB32C2D136D00835268 /* CircleView.swift */,
 				B0C88FB52C2D15B100835268 /* CircleContainer.swift */,
+				B0C88FBA2C2E005900835268 /* AngleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */,
 				B0C88FB42C2D136D00835268 /* CircleView.swift in Sources */,
+				B0C88FBB2C2E005900835268 /* AngleView.swift in Sources */,
 				B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */,
 				B0C88F8B2C2D12A300835268 /* ContentView.swift in Sources */,
 				B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */,
