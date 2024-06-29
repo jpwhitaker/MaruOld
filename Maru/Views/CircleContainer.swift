@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircleContainer: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
-  
+  @State var id = UUID()
   var body: some View {
     
     ZStack {
@@ -20,18 +20,18 @@ struct CircleContainer: View {
             viewModel.center = center
             viewModel.radius = geometry.size.width/2
           }
+        //ids used to reset animation when view changes.
+        AngleView().id(id)
+        CircleView().id(id)
+        DotView().id(id)
         
-        AngleView()
-        CircleView()
-        DotView()
-
-
+        
       }
     }
     .aspectRatio(1, contentMode: .fit)
-    
-
-//    .border(Color.red, width: 2)
+    .onAppear{
+      id = UUID()
+    }
   }
 }
 
