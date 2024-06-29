@@ -8,6 +8,19 @@
 import SwiftUI
 
 struct TutorialView04: View {
+  
+  private var unitCircleOptions: UnitCircleOptions {
+      UnitCircleOptions(
+          //zoom to portion
+          //center label
+          // (1,0) label
+          // arrow ccw
+          // (0,1) label
+          
+      )
+  }
+  
+  
   var body: some View {
       VStack {
         Text("The Unit Circle")

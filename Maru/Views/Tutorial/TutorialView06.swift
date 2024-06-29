@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+private var unitCircleOptions: UnitCircleOptions {
+    UnitCircleOptions(
+        //zoom to qI
+        
+        // label x values appear in sequence 0-4 (0, _ )
+        
+    )
+}
+
+
 struct TutorialView06: View {
   var body: some View {
       VStack {

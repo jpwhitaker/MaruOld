@@ -7,10 +7,15 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct TutorialView01: View {
     @EnvironmentObject var viewModel: UnitCircleViewModel
+  
+  private var unitCircleOptions: UnitCircleOptions {
+      UnitCircleOptions(
+          drawAngles: [(0, 180), (90, 270)],
+          drawDots: []
+      )
+  }
     var body: some View {
         VStack {
           CircleContainer(onlyAngles: [(0,180), (90,270)])

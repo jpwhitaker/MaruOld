@@ -7,10 +7,24 @@
 
 import SwiftUI
 
+struct UnitCircleOptions {
+    var drawAngles: [(start: Double, end: Double)]?
+    var drawDots: [CGPoint]?
+}
+
+
 struct CircleContainer: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
   @State var id = UUID()
   var onlyAngles: [(start: Double, end: Double)]?
+  var options: UnitCircleOptions?
+
+  private var unitCircleOptions: UnitCircleOptions {
+      UnitCircleOptions(
+          drawAngles: [(0, 180), (90, 270)],
+          drawDots: []
+      )
+  }
 
 
   var body: some View {
@@ -32,6 +46,7 @@ struct CircleContainer: View {
       }
     }
     .aspectRatio(1, contentMode: .fit)
+    .border(.red, width: 1)
     .onAppear{
       id = UUID()
     }

@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct TutorialView08: View {
+  
+  private var unitCircleOptions: UnitCircleOptions {
+      UnitCircleOptions(
+          // somehow change labels in sequence to show dividing
+          // somehow change labels in sequence to show 
+          
+      )
+  }
+  
   var body: some View {
       VStack {
         Text("The Unit Circle")
