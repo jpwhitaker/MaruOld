@@ -10,6 +10,9 @@ import SwiftUI
 struct CircleContainer: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
   @State var id = UUID()
+  var onlyAngles: [(start: Double, end: Double)]?
+
+
   var body: some View {
     
     ZStack {
@@ -21,7 +24,7 @@ struct CircleContainer: View {
             viewModel.radius = geometry.size.width/2
           }
         //ids used to reset animation when view changes.
-        AngleView().id(id)
+        AngleView(onlyAngles: onlyAngles).id(id)
         CircleView().id(id)
         DotView().id(id)
         

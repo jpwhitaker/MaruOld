@@ -13,7 +13,7 @@ struct TutorialView01: View {
     @EnvironmentObject var viewModel: UnitCircleViewModel
     var body: some View {
         VStack {
-          CircleContainer()
+          CircleContainer(onlyAngles: [(0,180), (90,270)])
             .environmentObject(UnitCircleViewModel())
             .padding()
           
