@@ -19,6 +19,16 @@
 		B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */; };
 		B0C88FBB2C2E005900835268 /* AngleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FBA2C2E005900835268 /* AngleView.swift */; };
 		B0C88FBD2C2E744800835268 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FBC2C2E744800835268 /* DotView.swift */; };
+		B0C88FC02C2E865F00835268 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FBF2C2E865F00835268 /* TutorialView.swift */; };
+		B0C88FC22C2E8CCB00835268 /* TutorialView01.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FC12C2E8CCB00835268 /* TutorialView01.swift */; };
+		B0C88FC42C2E8DC400835268 /* TutorialView02.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FC32C2E8DC400835268 /* TutorialView02.swift */; };
+		B0C88FC62C2EC56E00835268 /* TutorialView03.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FC52C2EC56E00835268 /* TutorialView03.swift */; };
+		B0C88FC82C2EC64300835268 /* TutorialView04.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FC72C2EC64300835268 /* TutorialView04.swift */; };
+		B0C88FCA2C2EC78000835268 /* TutorialView05.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FC92C2EC78000835268 /* TutorialView05.swift */; };
+		B0C88FCC2C2EC85600835268 /* TutorialView06.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FCB2C2EC85600835268 /* TutorialView06.swift */; };
+		B0C88FCE2C2EC94A00835268 /* TutorialView07.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FCD2C2EC94A00835268 /* TutorialView07.swift */; };
+		B0C88FD02C2EC9B600835268 /* TutorialView08.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FCF2C2EC9B600835268 /* TutorialView08.swift */; };
+		B0C88FD22C2ECA0D00835268 /* TutorialView09.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88FD12C2ECA0D00835268 /* TutorialView09.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +64,16 @@
 		B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCircleViewModel.swift; sourceTree = "<group>"; };
 		B0C88FBA2C2E005900835268 /* AngleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleView.swift; sourceTree = "<group>"; };
 		B0C88FBC2C2E744800835268 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		B0C88FBF2C2E865F00835268 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		B0C88FC12C2E8CCB00835268 /* TutorialView01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView01.swift; sourceTree = "<group>"; };
+		B0C88FC32C2E8DC400835268 /* TutorialView02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView02.swift; sourceTree = "<group>"; };
+		B0C88FC52C2EC56E00835268 /* TutorialView03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView03.swift; sourceTree = "<group>"; };
+		B0C88FC72C2EC64300835268 /* TutorialView04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView04.swift; sourceTree = "<group>"; };
+		B0C88FC92C2EC78000835268 /* TutorialView05.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView05.swift; sourceTree = "<group>"; };
+		B0C88FCB2C2EC85600835268 /* TutorialView06.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView06.swift; sourceTree = "<group>"; };
+		B0C88FCD2C2EC94A00835268 /* TutorialView07.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView07.swift; sourceTree = "<group>"; };
+		B0C88FCF2C2EC9B600835268 /* TutorialView08.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView08.swift; sourceTree = "<group>"; };
+		B0C88FD12C2ECA0D00835268 /* TutorialView09.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView09.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +162,7 @@
 		B0C88FB22C2D135300835268 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0C88FBE2C2E864900835268 /* Tutorial */,
 				B0C88FB32C2D136D00835268 /* CircleView.swift */,
 				B0C88FB52C2D15B100835268 /* CircleContainer.swift */,
 				B0C88FBA2C2E005900835268 /* AngleView.swift */,
@@ -156,6 +177,23 @@
 				B0C88FB82C2D21B900835268 /* UnitCircleViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B0C88FBE2C2E864900835268 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				B0C88FBF2C2E865F00835268 /* TutorialView.swift */,
+				B0C88FC12C2E8CCB00835268 /* TutorialView01.swift */,
+				B0C88FC32C2E8DC400835268 /* TutorialView02.swift */,
+				B0C88FC52C2EC56E00835268 /* TutorialView03.swift */,
+				B0C88FC72C2EC64300835268 /* TutorialView04.swift */,
+				B0C88FC92C2EC78000835268 /* TutorialView05.swift */,
+				B0C88FCB2C2EC85600835268 /* TutorialView06.swift */,
+				B0C88FCD2C2EC94A00835268 /* TutorialView07.swift */,
+				B0C88FCF2C2EC9B600835268 /* TutorialView08.swift */,
+				B0C88FD12C2ECA0D00835268 /* TutorialView09.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +326,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C88FD22C2ECA0D00835268 /* TutorialView09.swift in Sources */,
 				B0C88FB92C2D21B900835268 /* UnitCircleViewModel.swift in Sources */,
+				B0C88FC22C2E8CCB00835268 /* TutorialView01.swift in Sources */,
 				B0C88FBD2C2E744800835268 /* DotView.swift in Sources */,
 				B0C88FB42C2D136D00835268 /* CircleView.swift in Sources */,
 				B0C88FBB2C2E005900835268 /* AngleView.swift in Sources */,
+				B0C88FC02C2E865F00835268 /* TutorialView.swift in Sources */,
+				B0C88FD02C2EC9B600835268 /* TutorialView08.swift in Sources */,
+				B0C88FCC2C2EC85600835268 /* TutorialView06.swift in Sources */,
+				B0C88FC82C2EC64300835268 /* TutorialView04.swift in Sources */,
 				B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */,
 				B0C88F8B2C2D12A300835268 /* ContentView.swift in Sources */,
+				B0C88FC42C2E8DC400835268 /* TutorialView02.swift in Sources */,
 				B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */,
+				B0C88FCE2C2EC94A00835268 /* TutorialView07.swift in Sources */,
+				B0C88FC62C2EC56E00835268 /* TutorialView03.swift in Sources */,
+				B0C88FCA2C2EC78000835268 /* TutorialView05.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

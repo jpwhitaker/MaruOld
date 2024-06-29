@@ -24,9 +24,13 @@ struct CircleContainer: View {
         AngleView()
         CircleView()
         DotView()
+
+
       }
     }
     .aspectRatio(1, contentMode: .fit)
+    
+
 //    .border(Color.red, width: 2)
   }
 }

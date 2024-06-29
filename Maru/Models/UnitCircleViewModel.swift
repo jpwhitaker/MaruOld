@@ -13,6 +13,8 @@ class UnitCircleViewModel: ObservableObject {
   @Published var center: CGPoint = .zero
   @Published var angle: Double = 0
   @Published var radius: Double = 0
+  @Published var shouldReplayAnimation = false
+
 //  @Published var containerSize: CGSize = .zero{
 //    didSet {
 //      updateCenter()
