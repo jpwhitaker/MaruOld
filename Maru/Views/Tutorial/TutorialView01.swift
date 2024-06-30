@@ -18,10 +18,6 @@ struct TutorialView01: View {
   }
     var body: some View {
         VStack {
-          CircleContainer(onlyAngles: [(0,180), (90,270)])
-            .environmentObject(UnitCircleViewModel())
-            .padding()
-          
           Text("The unit may appear complex at first, but you only need to remember a small portion of it to fill out the rest.  I'll show you!")
               .font(.subheadline)
               .padding()
@@ -30,6 +26,11 @@ struct TutorialView01: View {
               .font(.subheadline)
               .padding()
           
+          CircleContainer(onlyAngles: [(0,180), (90,270)])
+            .environmentObject(UnitCircleViewModel())
+            .padding()
+          
+
           Spacer()
         }
         .navigationBarTitle("Tutorial", displayMode: .inline)

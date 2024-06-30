@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B074FB5F2C31718F00A9D278 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074FB5E2C31718F00A9D278 /* LabelView.swift */; };
+		B08D1F992C30D3B000E3A60E /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = B08D1F982C30D3B000E3A60E /* SwiftMath */; };
+		B08D1F9B2C30D7A700E3A60E /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */; };
 		B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88F882C2D12A300835268 /* MaruApp.swift */; };
 		B0C88F8B2C2D12A300835268 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88F8A2C2D12A300835268 /* ContentView.swift */; };
 		B0C88F8D2C2D12A400835268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C88F8C2C2D12A400835268 /* Assets.xcassets */; };
@@ -49,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B074FB5E2C31718F00A9D278 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 		B0C88F852C2D12A300835268 /* Maru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C88F882C2D12A300835268 /* MaruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaruApp.swift; sourceTree = "<group>"; };
 		B0C88F8A2C2D12A300835268 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B08D1F992C30D3B000E3A60E /* SwiftMath in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +172,9 @@
 				B0C88FB32C2D136D00835268 /* CircleView.swift */,
 				B0C88FB52C2D15B100835268 /* CircleContainer.swift */,
 				B0C88FBA2C2E005900835268 /* AngleView.swift */,
+				B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */,
 				B0C88FBC2C2E744800835268 /* DotView.swift */,
+				B074FB5E2C31718F00A9D278 /* LabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +220,9 @@
 			dependencies = (
 			);
 			name = Maru;
+			packageProductDependencies = (
+				B08D1F982C30D3B000E3A60E /* SwiftMath */,
+			);
 			productName = Maru;
 			productReference = B0C88F852C2D12A300835268 /* Maru.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +295,9 @@
 				Base,
 			);
 			mainGroup = B0C88F7C2C2D12A300835268;
+			packageReferences = (
+				B08D1F972C30D3B000E3A60E /* XCRemoteSwiftPackageReference "SwiftMath" */,
+			);
 			productRefGroup = B0C88F862C2D12A300835268 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -335,8 +349,10 @@
 				B0C88FC02C2E865F00835268 /* TutorialView.swift in Sources */,
 				B0C88FD02C2EC9B600835268 /* TutorialView08.swift in Sources */,
 				B0C88FCC2C2EC85600835268 /* TutorialView06.swift in Sources */,
+				B074FB5F2C31718F00A9D278 /* LabelView.swift in Sources */,
 				B0C88FC82C2EC64300835268 /* TutorialView04.swift in Sources */,
 				B0C88FB62C2D15B100835268 /* CircleContainer.swift in Sources */,
+				B08D1F9B2C30D7A700E3A60E /* LabelsView.swift in Sources */,
 				B0C88F8B2C2D12A300835268 /* ContentView.swift in Sources */,
 				B0C88FC42C2E8DC400835268 /* TutorialView02.swift in Sources */,
 				B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */,
@@ -672,6 +688,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B08D1F972C30D3B000E3A60E /* XCRemoteSwiftPackageReference "SwiftMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mgriebling/SwiftMath.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B08D1F982C30D3B000E3A60E /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08D1F972C30D3B000E3A60E /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0C88F7D2C2D12A300835268 /* Project object */;
 }

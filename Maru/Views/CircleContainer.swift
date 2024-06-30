@@ -41,6 +41,7 @@ struct CircleContainer: View {
         AngleView(onlyAngles: onlyAngles).id(id)
         CircleView().id(id)
         DotView().id(id)
+        LabelsView()
         
         
       }
