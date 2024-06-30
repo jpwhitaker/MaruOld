@@ -31,6 +31,7 @@ struct MathView: UIViewRepresentable {
   
   func makeUIView(context: Context) -> MTMathUILabel {
     let view = MTMathUILabel()
+    //for debug
 //          view.layer.borderColor = UIColor.red.cgColor
 //          view.layer.borderWidth = 2.0
     return view

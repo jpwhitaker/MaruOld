@@ -41,16 +41,22 @@ struct CircleContainer: View {
         AngleView(onlyAngles: onlyAngles).id(id)
         CircleView().id(id)
         DotView().id(id)
-        LabelsView()
+        LabelsView().id(id)
         
         
       }
     }
     .aspectRatio(1, contentMode: .fit)
-    .border(.red, width: 1)
-    .onAppear{
-      id = UUID()
+//    .border(.red, width: 1)
+    .onAppear {
+        generateNewIDs()
     }
+    .onTapGesture {
+        generateNewIDs()
+    }
+  }
+  private func generateNewIDs() {
+      id = UUID()
   }
 }
 
