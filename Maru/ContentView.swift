@@ -18,7 +18,7 @@ struct ContentView: View {
           
           HStack {
             Spacer()
-            CircleContainer(options: UnitCircleOptions(showLabels: false))
+            CircleContainer(options: UnitCircleOptions(showLabels: false, showQuadrants: false))
               .frame(width: geometry.size.width * 0.8, height: geometry.size.width * 0.8)
             Spacer()
           }

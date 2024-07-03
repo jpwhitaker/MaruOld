@@ -11,6 +11,7 @@ import Combine
 
 struct UnitCircleOptions {
     var showLabels: Bool = true
+    var showQuadrants: Bool = true
     var onlyAngles: [(start: Double, end: Double)]? = nil
     var onlyDots: [Double]? = nil
 }

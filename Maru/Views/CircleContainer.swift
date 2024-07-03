@@ -30,7 +30,9 @@ struct CircleContainer: View {
       if options.showLabels {
         LabelsView().id(id)
       }
-      Quadrant()
+      if options.showQuadrants{
+        Quadrant().id(id)
+      }
       // Rectangle with a clear background to capture taps
       Rectangle()
         .foregroundColor(.clear)
