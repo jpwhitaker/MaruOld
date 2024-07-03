@@ -10,14 +10,14 @@ import SwiftUI
 struct TutorialView: View {
     private let pages: [AnyView] = [
       AnyView(TutorialView01()),
-      AnyView(TutorialView02()),
-      AnyView(TutorialView03()),
-      AnyView(TutorialView04()),
-      AnyView(TutorialView05()),
-      AnyView(TutorialView06()),
-      AnyView(TutorialView07()),
-      AnyView(TutorialView08()),
-      AnyView(TutorialView09()),
+//      AnyView(TutorialView02()),
+//      AnyView(TutorialView03()),
+//      AnyView(TutorialView04()),
+//      AnyView(TutorialView05()),
+//      AnyView(TutorialView06()),
+//      AnyView(TutorialView07()),
+//      AnyView(TutorialView08()),
+//      AnyView(TutorialView09()),
     ] // Wrap the views in AnyView
     
     var body: some View {

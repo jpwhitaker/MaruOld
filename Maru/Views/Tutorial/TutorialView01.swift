@@ -12,8 +12,7 @@ struct TutorialView01: View {
   
   private var unitCircleOptions: UnitCircleOptions {
       UnitCircleOptions(
-          drawAngles: [(0, 180), (90, 270)],
-          drawDots: []
+          showLabels: true
       )
   }
     var body: some View {
@@ -26,7 +25,11 @@ struct TutorialView01: View {
               .font(.subheadline)
               .padding()
           
-          CircleContainer(onlyAngles: [(0,180), (90,270)])
+          CircleContainer(options: UnitCircleOptions(
+            showLabels: false,
+            onlyAngles: [(0,180), (90,270)],
+            onlyDots: [0, 90, 180, 270]
+          ))
             .environmentObject(UnitCircleViewModel())
             .padding()
           

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct TutorialView02: View {
-  private var unitCircleOptions: UnitCircleOptions {
-      UnitCircleOptions(
-          drawAngles: [(0,180), (30, 210), (45, 225), (60, 240), (90,270)],
-          drawDots: []
-          //dashed angles: [(0,180), (90,270)]
-          //showQuadrantLabels: true
-      )
-  }
+//  private var unitCircleOptions: UnitCircleOptions {
+//      UnitCircleOptions(
+//          drawAngles: [(0,180), (30, 210), (45, 225), (60, 240), (90,270)],
+//          drawDots: []
+//          //dashed angles: [(0,180), (90,270)]
+//          //showQuadrantLabels: true
+//      )
+//  }
   
   var body: some View {
     VStack {

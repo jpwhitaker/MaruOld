@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     @StateObject var viewModel = UnitCircleViewModel()
     
@@ -17,31 +15,50 @@ struct ContentView: View {
             GeometryReader { geometry in
                 VStack {
                     Spacer()
+                    
                     HStack {
                         Spacer()
-                        CircleContainer()
-
-                            .frame(width: geometry.size.width * 0.8, height: geometry.size.height * 0.8)
+                        CircleContainer(options: UnitCircleOptions(showLabels: false))
+                            .frame(width: geometry.size.width * 0.8, height: geometry.size.width * 0.8)
                         Spacer()
                     }
+                    
                     Spacer()
                     
-                    NavigationLink(destination: TutorialView()) {
-                        Text("Learn the Unit Circle")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(10)
+                    VStack(spacing: 10) {
+                        NavigationLink("Learn to Draw the Unit Circle") {
+                            TutorialView()
+                                .environmentObject(UnitCircleViewModel())
+                        }
+                        NavigationLink("Quiz Yourself") {
+                            UnitCircleQuizView()
+                                .environmentObject(UnitCircleViewModel())
+                        }
                     }
+                    .frame(maxWidth: .infinity)
                     .padding()
+                    
+                    Spacer()
                 }
-                .frame(maxHeight: .infinity)
-                .ignoresSafeArea(.all, edges: .vertical)
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                .environmentObject(viewModel)
+                .navigationBarTitle("Maru - Unit Circle", displayMode: .inline)
             }
-            .environmentObject(viewModel)
-            .navigationBarTitle("Unit Circle App", displayMode: .inline)
         }
+    }
+}
+
+struct UnitCircleView: View {
+    var body: some View {
+        Text("Unit Circle View")
+            .navigationTitle("View the Unit Circle")
+    }
+}
+
+struct UnitCircleQuizView: View {
+    var body: some View {
+        Text("Quiz View")
+            .navigationTitle("Quiz Yourself")
     }
 }
 
@@ -49,5 +66,5 @@ struct ContentView: View {
 #Preview {
   ContentView()
     .environmentObject(UnitCircleViewModel())
-
 }
+

@@ -9,11 +9,14 @@ import Foundation
 import SwiftUI
 import Combine
 
+struct UnitCircleOptions {
+    var showLabels: Bool = true
+    var onlyAngles: [(start: Double, end: Double)]? = nil
+    var onlyDots: [Double]? = nil
+}
+
 class UnitCircleViewModel: ObservableObject {
-  @Published var center: CGPoint = .zero
-  @Published var angle: Double = 0
-  @Published var radius: Double = 0
-  @Published var shouldReplayAnimation = false
+  @Published var defaultOptions = UnitCircleOptions()
   
   @Published var angles: [Double] = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330]
   

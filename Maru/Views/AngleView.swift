@@ -11,9 +11,8 @@ struct AngleView: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
   @State private var animateLines = false
   @State private var lineOpacity = 0.2
-  @State var angles: [(start: Double, end: Double)] = [
-    (0, 180), (30, 210), (45, 225), (60, 240), (90, 270), (120, 300), (135,315), (150, 330)
-  ]
+  @State var angles: [(start: Double, end: Double)]
+  
   //optional angles array to only draw a portion of angles
   init(onlyAngles: [(start: Double, end: Double)]? = nil) {
       self._angles = State(initialValue: onlyAngles ?? [

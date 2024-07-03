@@ -7,56 +7,44 @@
 
 import SwiftUI
 
-struct UnitCircleOptions {
-    var drawAngles: [(start: Double, end: Double)]?
-    var drawDots: [CGPoint]?
-}
 
 
 struct CircleContainer: View {
   @EnvironmentObject var viewModel: UnitCircleViewModel
   @State var id = UUID()
-  var onlyAngles: [(start: Double, end: Double)]?
-  var options: UnitCircleOptions?
-
-  private var unitCircleOptions: UnitCircleOptions {
-      UnitCircleOptions(
-          drawAngles: [(0, 180), (90, 270)],
-          drawDots: []
-      )
+  var options: UnitCircleOptions
+  
+  
+  init(options: UnitCircleOptions? = nil) {
+    // Use the provided options if available, otherwise use the default options from the view model
+    self.options = options ?? UnitCircleOptions()
   }
-
-
+  
   var body: some View {
     
     ZStack {
-      GeometryReader { geometry in
-        Color.clear
-          .onAppear{
-            let center = CGPoint(x: geometry.size.width / 2, y: geometry.size.width / 2)
-            viewModel.center = center
-            viewModel.radius = geometry.size.width/2
-          }
-        //ids used to reset animation when view changes.
-        AngleView(onlyAngles: onlyAngles).id(id)
-        CircleView().id(id)
-        DotView().id(id)
+      //ids used to reset animation when view changes.
+      AngleView(onlyAngles: options.onlyAngles).id(id)
+      CircleView().id(id)
+      DotView(onlyDots: options.onlyDots).id(id)
+      if options.showLabels { 
         LabelsView().id(id)
-        
-        
       }
+      // Rectangle with a clear background to capture taps
+      Rectangle()
+        .foregroundColor(.clear)
+        .contentShape(Rectangle())
+        .onTapGesture {
+          generateNewIDs()
+        }
     }
     .aspectRatio(1, contentMode: .fit)
-//    .border(.red, width: 1)
     .onAppear {
-        generateNewIDs()
-    }
-    .onTapGesture {
-        generateNewIDs()
+      generateNewIDs()
     }
   }
   private func generateNewIDs() {
-      id = UUID()
+    id = UUID()
   }
 }
 
