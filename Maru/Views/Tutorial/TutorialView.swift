@@ -10,7 +10,7 @@ import SwiftUI
 struct TutorialView: View {
     private let pages: [AnyView] = [
       AnyView(TutorialView01()),
-//      AnyView(TutorialView02()),
+      AnyView(TutorialView02()),
 //      AnyView(TutorialView03()),
 //      AnyView(TutorialView04()),
 //      AnyView(TutorialView05()),

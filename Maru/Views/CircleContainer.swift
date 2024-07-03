@@ -27,9 +27,10 @@ struct CircleContainer: View {
       AngleView(onlyAngles: options.onlyAngles).id(id)
       CircleView().id(id)
       DotView(onlyDots: options.onlyDots).id(id)
-      if options.showLabels { 
+      if options.showLabels {
         LabelsView().id(id)
       }
+      Quadrant()
       // Rectangle with a clear background to capture taps
       Rectangle()
         .foregroundColor(.clear)
@@ -39,15 +40,30 @@ struct CircleContainer: View {
         }
     }
     .aspectRatio(1, contentMode: .fit)
+//    .border(Color.red, width: 1)
     .onAppear {
       generateNewIDs()
     }
   }
+    
+  
   private func generateNewIDs() {
     id = UUID()
   }
 }
 
 #Preview {
-  ContentView()
+  GeometryReader { geometry in
+    VStack {
+      Spacer()
+      HStack {
+        Spacer()
+        CircleContainer()
+          .environmentObject(UnitCircleViewModel())
+          .frame(width: geometry.size.width * 0.75)
+        Spacer()
+      }
+      Spacer()
+    }
+  }
 }
