@@ -62,8 +62,18 @@ struct LabelsView: View {
 }
 
 
-struct LabelsView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
+#Preview {
+  GeometryReader { geometry in
+    VStack {
+      Spacer()
+      HStack {
+        Spacer()
+        CircleContainer()
+          .environmentObject(UnitCircleViewModel())
+          .frame(width: geometry.size.width * 0.75)
+        Spacer()
+      }
+      Spacer()
+    }
   }
 }

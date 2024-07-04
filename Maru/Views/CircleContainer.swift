@@ -33,6 +33,8 @@ struct CircleContainer: View {
       if options.showQuadrants{
         Quadrant().id(id)
       }
+      
+      PointsLabelsView().id(id)
       // Rectangle with a clear background to capture taps
       Rectangle()
         .foregroundColor(.clear)

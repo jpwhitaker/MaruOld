@@ -31,6 +31,7 @@ struct MathView: UIViewRepresentable {
   
   func makeUIView(context: Context) -> MTMathUILabel {
     let view = MTMathUILabel()
+//    view.layer.backgroundColor = UIColor.yellow.cgColor
     //for debug
 //          view.layer.borderColor = UIColor.red.cgColor
 //          view.layer.borderWidth = 2.0
@@ -48,8 +49,9 @@ struct MathView: UIViewRepresentable {
 
 struct LabelView: View {
   var equation: String
+  var fontSize: Float = 20
   var body: some View {
-    MathView(equation: equation, fontSize: 20)
+    MathView(equation: equation, fontSize: CGFloat(fontSize))
       .frame(width: 30, height:30)
       .background(
         RoundedRectangle(cornerRadius: .infinity)
@@ -61,6 +63,6 @@ struct LabelView: View {
 
 struct LabelView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    LabelView(equation: "2+2", fontSize: 20.0)
   }
 }

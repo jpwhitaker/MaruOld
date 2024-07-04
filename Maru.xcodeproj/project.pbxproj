@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B074FB5F2C31718F00A9D278 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074FB5E2C31718F00A9D278 /* LabelView.swift */; };
 		B074FB632C36050200A9D278 /* QuadrantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074FB622C36050200A9D278 /* QuadrantView.swift */; };
+		B074FB652C3626C700A9D278 /* PointsLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074FB642C3626C700A9D278 /* PointsLabelsView.swift */; };
 		B08D1F992C30D3B000E3A60E /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = B08D1F982C30D3B000E3A60E /* SwiftMath */; };
 		B08D1F9B2C30D7A700E3A60E /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */; };
 		B0C88F892C2D12A300835268 /* MaruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C88F882C2D12A300835268 /* MaruApp.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		B074FB5E2C31718F00A9D278 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		B074FB622C36050200A9D278 /* QuadrantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantView.swift; sourceTree = "<group>"; };
+		B074FB642C3626C700A9D278 /* PointsLabelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsLabelsView.swift; sourceTree = "<group>"; };
 		B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 		B0C88F852C2D12A300835268 /* Maru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C88F882C2D12A300835268 /* MaruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaruApp.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				B0C88FB52C2D15B100835268 /* CircleContainer.swift */,
 				B0C88FBA2C2E005900835268 /* AngleView.swift */,
 				B08D1F9A2C30D7A700E3A60E /* LabelsView.swift */,
+				B074FB642C3626C700A9D278 /* PointsLabelsView.swift */,
 				B0C88FBC2C2E744800835268 /* DotView.swift */,
 				B074FB5E2C31718F00A9D278 /* LabelView.swift */,
 			);
@@ -363,6 +366,7 @@
 				B0C88FCE2C2EC94A00835268 /* TutorialView07.swift in Sources */,
 				B0C88FC62C2EC56E00835268 /* TutorialView03.swift in Sources */,
 				B0C88FCA2C2EC78000835268 /* TutorialView05.swift in Sources */,
+				B074FB652C3626C700A9D278 /* PointsLabelsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

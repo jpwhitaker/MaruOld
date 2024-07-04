@@ -20,12 +20,18 @@ struct TutorialView03: View {
   
   var body: some View {
       VStack {
-        Text("The Unit Circle")
-            .font(.largeTitle)
-            .padding()
-        
+
         Text("We'll do the same on the other side.  Quadrant II will be a mirror image of Quadrant I. ")
             .padding()
+        
+        CircleContainer(options: UnitCircleOptions(
+          showLabels: false,
+          onlyAngles: [(0,180), (30,210), (45,225), (60,240), (90,270), (120,300), (135, 315), (150,330)],
+          onlyDots: [120, 135, 150, 300, 315, 330]
+        ))
+          .environmentObject(UnitCircleViewModel())
+          .padding()
+        
         
         Text("Now we have a blank unit circle ready to fill out!")
             .padding()
